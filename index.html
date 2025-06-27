@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Oswald&family=Playfair+Display&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Bangle Bliss</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="heading">Bangle Bliss</h1>
+        <img class="logo" src="pics/bracelet-svgrepo-com.svg" alt="the bangle bliss logo" loading="lazy">
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar" id="navbar">
+            <!--href values starting with capital letters-->
+            <a class="nav-link" href="#Home">Home</a>
+            <a class="nav-link" href="#Shop">Shop</a>
+            <a class="nav-link" href="#About">About</a>
+            <a class="nav-link" href="#Contact">Contact</a>
+        </nav>
+    </div>
+
+    <div class="introduction" id="Home">
+        <p>Welcome to Bangle Bliss😊</p>
+        <p>Feel free to take a look at our available products and pick an item that matches your unique style.</p>
+        
+    </div>
+    
+<!-- Shop and its various Products -->
+<h2 class="shop-title">Pre-made Bangles</h2>
+    <div id="Shop">
+        <div class="container">
+            <img class="product" 
+            
+            src="pics/pre-made/pic 1.jpeg" 
+            alt="a bracelet" 
+            
+            loading="lazy">
+            <p class="product-title">
+                
+                Brown tiger
+            
+            </p>
+            <button onclick="orderProduct('Brown Tiger Bangle')" class="pre-made">Order via WhatsApp</button>   
+        </div>
+
+        <div class="container">
+            <img class="product" 
+            
+            src="pics/pre-made/pic 2.jpeg" 
+            alt="a bracelet" 
+            
+            loading="lazy">
+            <p class="product-title">
+                
+                Black with a hint of brown
+            
+            </p>
+            <button onclick="orderProduct('Black with a hint of brown')" class="pre-made">Order via WhatsApp</button>
+        </div>
+
+        <div class="container">
+            <img class="product" 
+            
+            src="pics/pre-made/pic 3.jpeg" 
+            alt="a bracelet" 
+            
+            loading="lazy">
+            <p class="product-title">
+                
+                Black and dark Blue
+            
+            </p>
+            <button onclick="orderProduct('Black and dark blue')" class="pre-made">Order via WhatsApp</button>
+        </div>
+
+        <div class="container">
+            <img class="product" 
+            
+            src="pics/pre-made/pic 4.jpeg" 
+            alt="a bracelet" 
+            
+            loading="lazy">
+            <p class="product-title">
+                
+                Black and rainbow
+            
+            </p>
+            <button onclick="orderProduct('Black and rainbow')" class="pre-made">Order via WhatsApp</button>
+        </div>
+    </div>    
+        <h2 class="custom-title">Custom Bangles</h2>
+        <div class="custom-made">
+<!-- Custom Individual Bracelet -->   
+            <h2>Customize Your Bangle😊</h2>
+
+            <!-- Choose Colors -->
+            <label>
+                <strong>Choose up to 2 colors:</strong>
+            </label>
+            <br>
+            <input type="checkbox" name="color" value="White" class="check"> White⚪
+            <input type="checkbox" name="color" value="Black" class="check"> Black⚫
+            <br>
+            <input type="checkbox" name="color" value="Gold" class="check"> Gold🟡
+            <input type="checkbox" name="color" value="Red" class="check"> Red🔴
+            <br>
+            <br>
+            <!-- Accessories Selection -->
+            <label>
+                <strong>Select Accessories (optional):</strong>
+            </label>
+            <br>
+            <p>select an image to see</p>
+            <input type="radio" name="accessory" id="acc1" value="Charm" class="accessory-radio">
+            <label for="acc1">
+                <img src="pics/Charms/heart charm.jpeg" alt="Silver heart" class="accessory-img" onclick="showLarge(this)">
+            </label>
+            <div id="popup" class="popup" onclick="hideLarge()">
+                <img id="popup-img" src="pics/Charms/heart charm.jpeg" alt="Large image">
+            </div>
+
+            <input type="radio" name="accessory" id="acc2" value="Bead" class="accessory-radio">
+            <label for="acc2">
+                <img src="pics/Charms/lock.jpg" alt="Charm 2" class="accessory-img" onclick="showLarge(this)">
+            </label>
+            <div id="popup" class="popup" onclick="hideLarge()">
+                <img id="popup-img" src="pics/Charms/lock.jpg" alt="Large image">
+            </div>
+
+            <input type="radio" name="accessory" id="acc3" value="Tassel" class="accessory-radio">
+            <label for="acc3">
+                <img src="pics/Charms/anchor charm.jpeg" alt="Charm 3" class="accessory-img" onclick="showLarge(this)" >
+            </label>
+            <div id="popup" class="popup" onclick="hideLarge()">
+                <img id="popup-img" src="pics/Charms/lock.jpg" alt="Large image">
+            </div>
+            <br>
+            <br>
+            <!-- Custom Name -->
+            <label for="customName">
+                <strong>Enter a name (optional):</strong>
+            </label>
+            <br>
+            <input type="text" id="customName" name="customName" placeholder="e.g. Faith's Bangle" class="namebox">
+            <br>
+            <button class="submit-custom" onclick="submitCustom">Order</button>
+            </div>
+
+<br>
+<!-- Custom Couples Bangle -->
+        <section class="couples">
+            <h2>Customize Couples Bangles</h2>
+
+            <div class="male">
+                <h3 class="couple-gender">For Him🤴</h3>
+                <label>
+                    <strong>Choose up to 2 colors:</strong>
+                </label>
+                <br>
+                <input type="checkbox" name="maleColor" value="Black" class="check"> Black⚫
+                <input type="checkbox" name="maleColor" value="White" class="check"> White⚪
+                <br>
+                <input type="checkbox" name="maleColor" value="Pink" class="check"> Pink <img src="pics/Charms/emojis.com pink-circle.png" height="20px" width="20px" loading="lazy">
+                <input type="checkbox" name="maleColor" value="Blue" class="check"> Blue🔵
+                <br>
+                <br>
+                <label for="maleWords">
+                    <strong>Words on bracelet (optional):</strong>
+                </label>
+                <br>
+                <input type="text" id="maleWords" placeholder="e.g. King" class="namebox">
+            </div>
+
+            <div class="female">
+                <h3 class="couple-gender">For Her👸</h3>
+                <label>
+                    <strong>Choose up to 2 colors:</strong>
+                </label>
+                <br>
+                <input type="checkbox" name="femaleColor" value="Black" class="check"> Black⚫
+                <input type="checkbox" name="femaleColor" value="White" class="check"> White⚪
+                <br>
+                <input type="checkbox" name="femaleColor" value="Pink" class="check"> Pink <img src="pics/Charms/emojis.com pink-circle.png" height="20px" width="20px" loading="lazy">
+                <input type="checkbox" name="femaleColor" value="Blue" class="check"> Blue🔵
+                <br>
+                <br>
+                <label for="femaleWords">
+                    <strong>Words on bracelet (optional):</strong>
+                </label>
+                <br>
+                <input type="text" id="femaleWords" placeholder="e.g. Queen" class="namebox">
+            </div>
+            <br>
+            <br>
+            <label>
+                <strong>Choose One Ornament (optional):</strong>
+            </label>
+            <br>
+            <input type="radio" name="coupleOrnament" id="orn1" value="Heart" class="accessory-radio">
+            <label for="orn1">
+                <img src="pics/couple-accessories/silver heart charms.jpg" alt="silver heart charm" class="accessory-img" onclick="showLarge(this)">
+            </label>
+            <input type="radio" name="coupleOrnament" id="orn2" value="Lock" class="accessory-radio">
+            <label for="orn2">
+                <img src="pics/couple-accessories/gold heart charm.jpg" alt="Lock" class="accessory-img" onclick="showLarge(this)">
+            </label>
+            <br>
+            <button class="submit-custom" onclick="submitCouplesOrder()">Order on WhatsApp</button>
+        </section>
+        <h2 class="about-title">About Bangle Bliss</h2>
+    <div class="about-section" id="About">
+        <div class="about-paragraph">
+        <p>Welcome to <strong>Bangle Bliss</strong> — a space where creativity meets culture, and every bangle is more than just an accessory. It’s a piece of art, lovingly handcrafted to celebrate individuality, heritage, and the little joys that make life beautiful.</p>
+
+<p>My name is Mary, and I’m a passionate artisan from Lilongwe. For me, bangles are more than decorations — they are stories. Stories of where we’ve come from, who we are, and the journeys that shape us. Every design I create is inspired by emotion, meaning, and the beauty found in everyday life. I believe that when you wear something handmade, you wear the energy and care that went into crafting it — and that’s something truly special.</p>
+
+<p>At Bangle Bliss, we don’t just make bangles — we create memories, symbols of love, strength, and personality. Whether you’re looking for something bold and expressive or soft and elegant, each piece is made with the intention to connect deeply with you or someone you care about.</p>
+
+<p>So whether you're gifting a friend, celebrating a milestone, or simply treating yourself, we’re here to craft a bangle that feels uniquely yours — one that speaks your truth and makes you feel seen, appreciated, and beautiful.</p>
+
+        </div>
+    </div>
+    <h2 class="contact-title">Contact Us</h2>
+    <div id="Contact">
+        <br>
+        <br>
+        <p>For more information, contact us...</p>
+        <br>
+        <p>📞 Phone: <a href="tel:+265998371850" target="_blank" >0998 37 18 50</a></p>
+        <!--incase of whatsapp accounts and instagram accounts-->
+        <a href="https://wa.me/265998371850" target="_blank">
+        <i class="fab fa-whatsapp icon"></i></a>
+        <a href="https://www.instagram.com/mary_zde/?utm_source=ig_web_button_share_sheet" target="_blank">
+        <i class="fab fa-instagram icon"></i></a>
+    </div>
+
+    <footer>
+        <p> &#169 Bangle Bliss</p>
+        <div class="footing">
+            <a href="privacypolicy.html">Privacy Policy</a>
+            <a href="termsofservices.html">Terms of Service</a>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
