@@ -419,6 +419,7 @@ footer p:hover {
     }
     .footing {
         font-size: 1.1rem;
+        flex-direction: column; 
     }
     }
 
