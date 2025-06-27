@@ -124,7 +124,7 @@
 
 
 #Home {
-    padding-top: 80px;
+    padding-top: 110px;
 }
 .introduction {
     height: 200px;
@@ -144,7 +144,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding-top: 20px;
+    padding: 20px;
     border-radius: 20px;
     background-color: #B3DDF2;
 }
