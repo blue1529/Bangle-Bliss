@@ -417,6 +417,9 @@ footer p:hover {
     .product-title {
         font-size: 1rem;
     }
+    .footing {
+        font-size: 1.1rem;
+    }
     }
 
     /* Medium devices (tablets, 600px to 899px) */
