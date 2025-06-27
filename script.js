@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function orderProduct(productName) {
-    const phone = '265996893890';
+    const phone = '265998371850';
     const message = encodeURIComponent(`Hi, I want to buy the ${productName}`);
     window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
 }
@@ -51,7 +51,7 @@ function hideLarge() {
 
 //ordering couples bangles
 function submitCouplesOrder() {
-  const phone = '265996893890'; // Replace with your actual WhatsApp number
+  const phone = '265998371850'; // Replace with your actual WhatsApp number
 
   // Get selected male colors
   const maleColors = Array.from(document.querySelectorAll("input[name='maleColor']:checked"))
@@ -82,7 +82,7 @@ function submitCouplesOrder() {
 
 function submitCustom() {
     //my phone number declared
-    const phone = '265996893890';
+    const phone = '265998371850';
 
     const colors = Array.from(document.querySelectorAll("input[name='color']:checked"))
     .map(cb => cb.value).join(", ") || "None";;
