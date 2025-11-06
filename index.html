@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Oswald&family=Playfair+Display&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/marvin-visions" rel="stylesheet">
     <title>Bangle Bliss</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
     </div>
 
     <div class="introduction" id="Home">
-        <p>Welcome to Bangle Bliss😊</p>
+        <p><b>Welcome to Bangle Bliss😊</b></p>
         <p>Feel free to take a look at our available products and pick an item that matches your unique style.</p>
         
     </div>
@@ -42,9 +43,7 @@
             
             loading="lazy">
             <p class="product-title">
-                
                 Brown tiger
-            
             </p>
             <button onclick="orderProduct('Brown Tiger Bangle')" class="pre-made">Order via WhatsApp</button>   
         </div>
@@ -57,9 +56,7 @@
             
             loading="lazy">
             <p class="product-title">
-                
                 Black with a hint of brown
-            
             </p>
             <button onclick="orderProduct('Black with a hint of brown')" class="pre-made">Order via WhatsApp</button>
         </div>
@@ -72,9 +69,7 @@
             
             loading="lazy">
             <p class="product-title">
-                
                 Black and dark Blue
-            
             </p>
             <button onclick="orderProduct('Black and dark blue')" class="pre-made">Order via WhatsApp</button>
         </div>
@@ -87,9 +82,7 @@
             
             loading="lazy">
             <p class="product-title">
-                
                 Black and rainbow
-            
             </p>
             <button onclick="orderProduct('Black and rainbow')" class="pre-made">Order via WhatsApp</button>
         </div>
@@ -97,18 +90,32 @@
         <h2 class="custom-title">Custom Bangles</h2>
         <div class="custom-made">
 <!-- Custom Individual Bracelet -->   
-            <h2>Customize Your Bangle😊</h2>
+            <h2>Design Your Bangle 💫</h2>
 
             <!-- Choose Colors -->
             <label>
                 <strong>Choose up to 2 colors:</strong>
             </label>
-            <br>
-            <input type="checkbox" name="color" value="White" class="check"> White⚪
-            <input type="checkbox" name="color" value="Black" class="check"> Black⚫
-            <br>
-            <input type="checkbox" name="color" value="Gold" class="check"> Gold🟡
-            <input type="checkbox" name="color" value="Red" class="check"> Red🔴
+            <div class="color-options">
+                <div class="color">
+                    <input type="checkbox" name="color" value="White" class="check"> White⚪
+                </div>
+                <div class="color">
+                    <input type="checkbox" name="color" value="Pink" class="check"> Pink <img src="pics/Charms/emojis.com pink-circle.png" height="20px" width="20px" loading="lazy">
+                </div>
+                <div class="color">
+                    <input type="checkbox" name="color" value="Black" class="check"> Black⚫
+                </div>
+                <!-- <div class="color">
+                    <input type="checkbox" name="color" value="Purple" class="check"> Purple🟣
+                    <div class="color">
+                    <input type="checkbox" name="color" value="Gold" class="check"> Gold🟡
+                </div>
+                </div> -->
+                <div class="color">
+                    <input type="checkbox" name="color" value="Red" class="check"> Red🔴
+                </div>
+            </div>
             <br>
             <br>
             <!-- Accessories Selection -->
@@ -124,7 +131,7 @@
             <div id="popup" class="popup" onclick="hideLarge()">
                 <img id="popup-img" src="pics/Charms/heart charm.jpeg" alt="Large image">
             </div>
-            <!--
+
             <input type="radio" name="accessory" id="acc2" value="Bead" class="accessory-radio">
             <label for="acc2">
                 <img src="pics/Charms/lock.jpg" alt="Charm 2" class="accessory-img" onclick="showLarge(this)">
@@ -132,7 +139,7 @@
             <div id="popup" class="popup" onclick="hideLarge()">
                 <img id="popup-img" src="pics/Charms/lock.jpg" alt="Large image">
             </div>
-            
+
             <input type="radio" name="accessory" id="acc3" value="Tassel" class="accessory-radio">
             <label for="acc3">
                 <img src="pics/Charms/anchor charm.jpeg" alt="Charm 3" class="accessory-img" onclick="showLarge(this)" >
@@ -140,7 +147,6 @@
             <div id="popup" class="popup" onclick="hideLarge()">
                 <img id="popup-img" src="pics/Charms/lock.jpg" alt="Large image">
             </div>
-            -->
             <br>
             <br>
             <!-- Custom Name -->
@@ -159,16 +165,25 @@
             <h2>Customize Couples Bangles</h2>
 
             <div class="male">
+
                 <h3 class="couple-gender">For Him🤴</h3>
                 <label>
                     <strong>Choose up to 2 colors:</strong>
                 </label>
-                <br>
+            <div class="color-options"> 
+                <div class="color">   
                 <input type="checkbox" name="maleColor" value="Black" class="check"> Black⚫
+                </div>
+                <div class="color">
                 <input type="checkbox" name="maleColor" value="White" class="check"> White⚪
-                <br>
+                </div>
+                <div class="color">
                 <input type="checkbox" name="maleColor" value="Pink" class="check"> Pink <img src="pics/Charms/emojis.com pink-circle.png" height="20px" width="20px" loading="lazy">
+                </div>
+                <div class="color">
                 <input type="checkbox" name="maleColor" value="Blue" class="check"> Blue🔵
+                </div>
+            </div>
                 <br>
                 <br>
                 <label for="maleWords">
@@ -183,14 +198,20 @@
                 <label>
                     <strong>Choose up to 2 colors:</strong>
                 </label>
-                <br>
+                <div class="color-options">
+                    <div class="color">
                 <input type="checkbox" name="femaleColor" value="Black" class="check"> Black⚫
+                </div>
+                <div class="color">
                 <input type="checkbox" name="femaleColor" value="White" class="check"> White⚪
-                <br>
+                </div>
+                <div class="color">
                 <input type="checkbox" name="femaleColor" value="Pink" class="check"> Pink <img src="pics/Charms/emojis.com pink-circle.png" height="20px" width="20px" loading="lazy">
+                </div>
+                <div class="color">
                 <input type="checkbox" name="femaleColor" value="Blue" class="check"> Blue🔵
-                <br>
-                <br>
+                </div>
+                </div>
                 <label for="femaleWords">
                     <strong>Words on bracelet (optional):</strong>
                 </label>
@@ -214,6 +235,7 @@
             <br>
             <button class="submit-custom" onclick="submitCouplesOrder()">Order on WhatsApp</button>
         </section>
+        
         <h2 class="about-title">About Bangle Bliss</h2>
     <div class="about-section" id="About">
         <div class="about-paragraph">
@@ -227,27 +249,40 @@
 
         </div>
     </div>
+<section id="Contact">
     <h2 class="contact-title">Contact Us</h2>
-    <div id="Contact">
-        <br>
-        <br>
-        <p>For more information, contact us...</p>
-        <br>
-        <p>📞 Phone: <a href="tel:+265998371850" target="_blank" >0998 37 18 50</a></p>
-        <!--incase of whatsapp accounts and instagram accounts-->
-        <a href="https://wa.me/265998371850" target="_blank">
-        <i class="fab fa-whatsapp icon"></i></a>
-        <a href="https://www.instagram.com/mary_zde/?utm_source=ig_web_button_share_sheet" target="_blank">
-        <i class="fab fa-instagram icon"></i></a>
+    <div class="contact-container">
+        <div class="contact-details">
+            <p>For more information, contact us...</p>
+            <p>📞 Phone: <a href="tel:+265998371850" target="_blank" >0998 37 18 50</a></p>
+            <!--incase of whatsapp accounts and instagram accounts-->
+            <a href="https://wa.me/265998371850" target="_blank">
+            <i class="fab fa-whatsapp icon"></i></a>
+            <a href="https://www.instagram.com/mary_zde/?utm_source=ig_web_button_share_sheet" target="_blank">
+            <i class="fab fa-instagram icon"></i></a>
+        </div>
+        <div class="form-section">
+            <h3>Send us a message</h3>
+            <form action="https://formspree.io/f/mayvlrze" method="POST" class="contact-form">
+            <label class="form-label" for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label class="form-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="e.g. mary@example.com" required>
+            <label class="form-label" for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
     </div>
 
     <footer>
-        <p> &#169 Bangle Bliss</p>
+        <a class="text" href="#home"><p> &#169 Bangle Bliss</p></a>
         <div class="footing">
             <a href="privacypolicy.html">Privacy Policy</a>
             <a href="termsofservices.html">Terms of Service</a>
         </div>
     </footer>
+    <div id="alert-container"></div>
 <script src="script.js"></script>
 </body>
 </html>
